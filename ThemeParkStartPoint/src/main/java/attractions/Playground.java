@@ -17,4 +17,9 @@ public class Playground extends Attraction implements ISecurity, IReviewed {
         }
         return false;
     }
+
+    @Override
+    public int getRating(int rating) {
+        return this.getRating();
+    }
 }
